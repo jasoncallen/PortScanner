@@ -184,7 +184,6 @@ def check_file() -> list:
     with open(input_file) as working_file:
         for line in working_file:
             line =line.strip()
-            # print(line)
             try:
                 ip = ipaddress.ip_address(line)
                 if line not in return_list:
